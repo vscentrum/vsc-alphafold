@@ -4,7 +4,7 @@ Input files and scripts for running AlphaFold on VSC clusters
 ## Extract timings from AlphaFold output
 
 ```
-out_file='example.out'
+outfile='example.out'
 timing_data=$(grep 'Final timings' $outfile | sed 's/.*Final timings[^:]*://g')
 python extract_timings.py "$timing_data"
 ```
